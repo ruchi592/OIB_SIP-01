@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <title>Calculator</title>
+    <head>
+        <link rel="stylesheet", type="text/css", href="design.css">
+            
+    </head>
+    <body>
+        <h1>Calculator</h1>
+        <div class="conatiner">
+        <div class="calculator">
+            <form name="myform">
+                <div class="display">
+                    <input type="text" class="display" name="display" value="" disabled>
+                </div>
+                <div>
+                    <input class="symbol" type="button" value="AC" onclick="clean()">
+                    <input  class="operator" type="button" value="√" onclick="SR('r')" id ="r" disabled>
+                    <input  class="operator" type="button" value="x&sup2;" onclick="SR('s')" id="s" disabled>
+                    <input  class="operator" type="button" value="+" onclick="insertOp('+')">
+                </div>
+                <div>
+                    <input class="number" type="button" value="7" onclick="insertNum(7)">
+                     <input class="number" type="button" value="8" onclick="insertNum(8)">
+                     <input class="number" type="button" value="9" onclick="insertNum(9)">
+                     <input  class="operator" type="button" value="-"  onclick="insertOp('-')">
+                </div>
+                <div>
+                    <input class="number" type="button" value="4" onclick="insertNum(4)">
+                    <input class="number" type="button" value="5" onclick="insertNum(5)">
+                    <input class="number" type="button" value="6" onclick="insertNum(6)">
+                    <input  class="operator" type="button" value="x" onclick="insertOp('*')">
+                </div>
+                <div>
+                    <input class="number" type="button" value="3" onclick="insertNum(3)">
+                    <input class="number" type="button" value="2" onclick="insertNum(2)">
+                    <input class="number" type="button" value="1" onclick="insertNum(1)">
+                    <input  class="operator" type="button" value="÷" onclick="insertOp('/')">
+                </div>
+                <div>
+                    <input class="operator" type="button" value="."  onclick="insertDec()">
+                    <input class="number" type="button" value="0" onclick="insertNum(0)">
+                    <input class="operator" type="button" value="⌫" onclick="back()">
+                    <input class="symbol" type="button" value="=" onclick="equalTo()">
+                </div>
+                
+
+            </form>
+    
+        </div>
+    </div>
+    <script src="calc.js"></script>
+
+    </body>
+</html>
